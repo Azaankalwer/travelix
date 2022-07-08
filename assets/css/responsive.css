@@ -1,0 +1,41 @@
+@media screen and ( max-width:630px) {
+    .main_background_text .main_text_top {
+        font-size: 100px;
+    }
+    .main_background_text .main_text_bottom {
+        font-size: 90px;
+    }
+    .destination_page h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and ( max-width:576px) {
+    .main_background_text .main_text_top {
+        font-size: 100px;
+    }
+    .main_background_text .main_text_bottom {
+        font-size: 90px;
+    }
+    .destination_page h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and ( max-width:550px) {
+    .main_background_text .main_text_top {
+        font-size: 80px;
+    }
+    .main_background_text .main_text_bottom {
+        font-size: 70px;
+    }
+    .destination_page h1 {
+        font-size: 40px;
+    }
+    .about_us_img {
+        min-width: 200px;
+        height: 300px;
+        object-fit: cover;
+        gap: 10px;
+    }
+}

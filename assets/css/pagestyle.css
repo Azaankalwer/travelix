@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: auto;
+}
+
+
+/* Navbar */
+
+.primary__nav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px !important;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.primary__logo {
+    font-size: 40px;
+    padding-bottom: 20px !important;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: white;
+    background-color: transparent;
+}
+
+.primary__bar {
+    display: flex;
+}
+
+.primary__list {
+    padding-left: 35px !important;
+}
+
+.primary__link {
+    color: white;
+    font-size: 17px;
+}
+
+.primary__link:hover {
+    color: #71C9CE;
+    transition: all .5s;
+}
+
+.toggler {
+    min-width: 30px;
+    min-height: 26px;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.toggler span {
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    right: 0;
+    background-color: white;
+}
+
+.toggler span:nth-child(1) {
+    width: 40%;
+    height: 4px;
+    top: 0;
+    right: 0;
+}
+
+.toggler span:nth-child(3) {
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width:900px) {
+    .toggler {
+        display: flex;
+    }
+    .primary__nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    .primary__bar {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: calc(100vh-70px);
+        display: flex;
+        align-items: center;
+        padding: 16px 35px !important;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, .8);
+        box-shadow: 0 12px 20px rgb(0, 0, 0, .4);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all .5s;
+    }
+    .primary__bar.active {
+        transform: scaleY(1);
+    }
+    .primary__bar .primary__list {
+        margin: 2rem 0;
+    }
+    .primary__bar .primary__list .primary__link {
+        font-size: 1.3rem;
+    }
+}
+
+.main__background {
+    background: rgb(0, 0, 0, 0.4) url(/assets/images/background.jpg);
+    width: 100%;
+    height: 38vh;
+    background-size: cover;
+    background-blend-mode: darken;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.main_background_text {
+    text-align: center;
+}
+
+.main_text_bottom {
+    font-size: 110px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+
+/* About Us Page */
+
+.about_us_page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about_us_background {
+    background-color: gray;
+    background: rgb(0, 0, 0, 0.7) url(/assets/images/sydney-2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    min-width: 500px;
+    height: 830px;
+    padding-top: 60px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.about_us_img {
+    min-width: 235px;
+    height: 280px;
+    object-fit: cover;
+    gap: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.about_us_img:hover {
+    transform: rotate(360deg);
+    transition: all .5s;
+    transition-duration: 1s;
+}
+
+.about_us_page_text h4 {
+    color: #A6E3E9;
+    padding-bottom: 10px;
+}
+
+.about_us_page_text h1 {
+    color: white;
+}
+
+.about_us_page_text p {
+    color: white;
+}
+
+.about_us_btn {
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    background: linear-gradient(to right, #A6E3E9, #71C9CE);
+    color: white;
+    transition: all .5s;
+    border: none;
+}
+
+.about_us_btn:hover {
+    background: linear-gradient(to right, #71C9CE, #A6E3E9);
+    transform: scaleX(1.2);
+}
+
+
+/* Destination Page */
+
+.destination_page {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.destination_page_menu {
+    width: 90%;
+}
+
+
+/* destination cards */
+
+.destination_page_card {
+    width: 350px;
+    min-height: 300px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    transition: transform 1s;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 20px !important;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination_card_desc {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.destination_card_desc h4 a {
+    font-size: 27px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.destination_card_desc p {
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    color: gray;
+}
+
+.destination_card_desc p:nth-child(4) {
+    color: red;
+}
+
+.destination_card_desc p span {
+    color: gray;
+}
+
+.destination_page_card:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+
+.footer {
+    margin-top: 150px;
+    background-color: #A6E3E9;
+    padding-bottom: 40px;
+}
+
+.footer_section {
+    padding-top: 100px;
+}
+
+.footer_box {
+    width: 200px;
+}
+
+.footer_box h4 {
+    color: white;
+}
+
+.footer_box p {
+    padding-top: 20px;
+}
+
+.footer_box h6 {
+    padding-top: 20px;
+}
+
+.footer_box p {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.footer_icons {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+.footer_icon {
+    border-radius: 50%;
+    background-color: white;
+    color: #A6E3E9;
+    font-size: 30px;
+    padding: 3px 13px;
+}
+
+.footer_icon i {
+    font-size: 23px;
+}
+
+.footer_question {
+    display: flex;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.footer_box_icon i {
+    font-size: 23px;
+    color: white;
+}
+
+
+/* Contact Page */
+
+.contact-section {
+    background: rgba(57, 125, 214, 0.5) url(/assets/images/antar-2.jpg);
+    background-size: cover !important;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-section .container {
+    padding-top: 100px;
+}
+
+.form-info {
+    width: 100%;
+    height: 600px;
+    background-color: #1d90be;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px;
+}
+
+.form-info label {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.form-content textarea {
+    border: 4px solid white;
+    /* border-top: none;
+    border-left: none;
+    border-right: none; */
+    background-color: #1d90be;
+    font-size: 19px;
+    color: white;
+}
+
+.form-info input {
+    padding: 5px 70px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline-color: _ #A6E3E9;
+}
+
+.form-content {
+    margin-top: 20px;
+}
+
+
+/* Blog Page*/
+
+.blog-big-card {
+    min-width: 350px;
+    height: 450px;
+    position: relative;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.blog-big-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+}
+
+.blog-big-content {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    bottom: 0;
+    margin-bottom: 70px;
+    margin-left: 20px;
+}
+
+.blog-big-content button {
+    padding: 4px 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.blog-big-content span {
+    padding: 4px 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.blog-big-card h4 {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+.blog-big-card h4 a {
+    color: white;
+}
+
+.blog-big-card h3 a:hover {
+    color: #A6E3E9;
+    text-decoration: underline !important;
+}
+
+.blog_page_2 {
+    padding-top: 20px;
+}
+
+.blog_page_2 h2 {
+    margin-bottom: 30px;
+}
+
+.small_blog_card {
+    min-width: 300px;
+    height: 350px;
+    gap: 10px;
+    position: relative;
+}
+
+.small_blog_card img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+}
+
+.blog-small-content button {
+    padding: 4px 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    background-color: #71C9CE;
+}
+
+.blog-small-content span {
+    padding: 4px 20px;
+    color: gray;
+    font-weight: bold;
+}
+
+.small_blog_desc {
+    padding-top: 20px;
+    position: absolute;
+}
+
+.small_blog_desc h5 {
+    padding-top: 10px;
+}
+
+.blog_page_3 .blog-big-card {
+    min-width: 400px;
+    height: 400px;
+    position: relative;
+    gap: 10px;
+}
+
+.blog_page_3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+}
+
+.blog_page_3 .blog-big-content {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    bottom: 0;
+    margin-bottom: 80px;
+    margin-left: 20px;
+}
+
+.blog_page_3 button {
+    padding: 4px 25px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.blog_page_3 span {
+    padding: 4px 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.blog_page_3 h3 {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+.blog_page_3 h3 a {
+    color: white;
+}
+
+.blog_page_3 h3 a:hover {
+    color: #A6E3E9;
+    text-decoration: underline !important;
+}
+
+.side_box_title {
+    font-size: 20px;
+}
+
+.blog_3_side_box {
+    min-width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.blog_3_side_box img {
+    width: 180px;
+    height: 140px;
+    background-size: cover;
+    position: absolute;
+}
+
+.side_box_desc h5 {
+    margin-left: 200px;
+}
+
+
+/* Book Now Page */
+
+.booknow_background {
+    background: rgba(0, 0, 0, 0.7) url(/assets/images/sydney-3.jpg);
+    width: 100%;
+    height: 1000px;
+    background-size: cover !important;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.booknow_box {
+    background-color: white;
+    width: 400px;
+    min-width: 500px;
+    height: 550px;
+}
+
+.booknow_box label {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.booknow_box input {
+    font-size: 18px;
+    color: gray;
+    padding: 4px 25px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+.btn-secondary {
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: lightgrey !important;
+    border: none !important;
+}
+
+.booknow_background_text {
+    margin-top: 100px;
+    min-width: 500px;
+    height: 550px;
+}
+
+.booknow_background_text h2 {
+    font-size: 60px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.booknow_background_text p {
+    font-size: 22px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    color: white;
+}
