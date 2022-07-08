@@ -106,6 +106,7 @@ body {
         transform: scaleX(0);
         transform-origin: left;
         transition: all .5s;
+        z-index:1;
     }
     .primary__bar.active {
         transform: scaleY(1);
@@ -138,6 +139,7 @@ body {
     animation-name: main_background_text;
     transition: all .5s;
     animation-duration: 3s;
+    z-index:0;
 }
 
 @keyframes main_background_text {
@@ -354,7 +356,7 @@ body {
 }
 
 .tour_card {
-    width: 450px;
+    min-width: 400px;
     height: 400px;
     gap: 10px;
     padding-right: 20px;
