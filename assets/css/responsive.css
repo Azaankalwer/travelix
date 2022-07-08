@@ -24,16 +24,16 @@
 
 @media screen and ( max-width:550px) {
     .main_background_text .main_text_top {
-        font-size: 80px;
+        font-size: 70px;
     }
     .main_background_text .main_text_bottom {
-        font-size: 70px;
+        font-size: 60px;
     }
     .destination_page h1 {
         font-size: 40px;
     }
     .about_us_img {
-        min-width: 200px;
+        min-width: 180px;
         height: 300px;
         object-fit: cover;
         gap: 10px;
