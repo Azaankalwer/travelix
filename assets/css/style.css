@@ -208,7 +208,7 @@ body {
 }
 
 .about_us_img {
-    min-width: 250px;
+    min-width: 220px;
     height: 300px;
     object-fit: cover;
     gap: 10px;
@@ -267,7 +267,8 @@ body {
 }
 
 .destination_card {
-    min-width: 310px;
+    width:300px
+    min-width: 400px;
     height: 450px;
     background-size: cover;
     position: relative;
