@@ -208,8 +208,8 @@ body {
 }
 
 .about_us_img {
-    min-width: 220px;
-    height: 300px;
+    min-width: 180px;
+    height: 250px;
     object-fit: cover;
     gap: 10px;
     transition: transform 1s;
@@ -267,7 +267,6 @@ body {
 }
 
 .destination_card {
-    width:300px
     min-width: 400px;
     height: 450px;
     background-size: cover;
@@ -357,17 +356,18 @@ body {
 }
 
 .tour_card {
-    min-width: 400px;
+    min-width: 380px;
     height: 400px;
     gap: 10px;
     padding-right: 20px;
     transition: transform 1s;
     transform-style: preserve-3d;
+    margin-top:10px;
 }
 
 .tour_img {
     min-width: 200px;
-    height: 350px;
+    height: 300px;
     position: relative;
 }
 
@@ -404,7 +404,7 @@ body {
 
 .tour_stars {
     color: gold;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .tour_stars i:nth-child(5) {
@@ -418,12 +418,12 @@ body {
 
 .tour_sign {
     font-size: 14px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .tour_sign .fa-solid {
     font-size: 21px;
-    padding-left: 20px;
+    padding-left: 5px;
     color: #71C9CE;
 }
 
