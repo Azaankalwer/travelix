@@ -153,14 +153,14 @@ body {
     background: rgb(0, 0, 0, 0.7) url(/assets/images/sydney-2.jpg);
     background-size: cover;
     background-blend-mode: darken;
-    min-width: 500px;
+    min-width: 380px;
     height: 830px;
     padding-top: 60px;
     padding-left: 20px;
     border-radius: 20px;
 }
 
-.about_us_img {
+.about_us_page_img {
     min-width: 235px;
     height: 280px;
     object-fit: cover;
@@ -375,9 +375,6 @@ body {
 
 .form-content textarea {
     border: 4px solid white;
-    /* border-top: none;
-    border-left: none;
-    border-right: none; */
     background-color: #1d90be;
     font-size: 19px;
     color: white;
