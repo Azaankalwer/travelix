@@ -1,3 +1,15 @@
+@media screen and ( max-width:790px) {
+    .text_area {
+        font-size: 15px;
+    }
+}
+
+@media screen and ( max-width:760px) {
+    .text_area {
+        font-size: 14px !important;
+    }
+}
+
 @media screen and ( max-width:630px) {
     .main_background_text .main_text_top {
         font-size: 100px;
@@ -38,17 +50,56 @@
         object-fit: cover;
         gap: 10px;
     }
+    .about_us_page_img {
+        min-width: 230px;
+        height: 250px;
+        object-fit: cover;
+        gap: 10px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
     .main_page_button {
         padding: 8px 20px;
         font-size: 12px;
         font-weight: 600;
+    }
+    .text_area {
+        font-size: 15px;
+    }
+}
+
+@media screen and ( max-width:524px) {
+    .about_us_page_img {
+        min-width: 200px;
+        height: 250px;
+        object-fit: cover;
+        gap: 10px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .booknow_box {
+        background-color: white;
+        min-width: 450px;
+        height: 550px;
+    }
+    .booknow_background_text h2 {
+        font-size: 45px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    .booknow_background_text p {
+        font-size: 17px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+        color: white;
     }
 }
 
 
 /* About Us Resposive */
 
-@media screen and ( max-width:460px) {
+@media screen and ( max-width:463px) {
     .about_us_img {
         min-width: 150px;
         height: 200px;
@@ -57,17 +108,14 @@
         transition: transform 1s;
         transform-style: preserve-3d;
     }
-    /* .destination_card {
-        min-width: 310px;
-        height: 450px;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    } */
+    .about_us_page_img {
+        min-width: 180px;
+        height: 200px;
+        object-fit: cover;
+        gap: 10px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
     /* Tour Card Responsive */
     .tour_card {
         width: 350px;
@@ -136,5 +184,72 @@
     }
     .faq_section {
         display: none;
+    }
+    .booknow_box {
+        background-color: white;
+        min-width: 400px;
+        height: 550px;
+    }
+    .booknow_background_text {
+        margin-top: 100px;
+        min-width: 30px;
+        height: 300px;
+    }
+    .booknow_background_text h2 {
+        font-size: 30px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+    .booknow_background_text p {
+        font-size: 15px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+@media screen and ( max-width:435px) {
+    .about_us_page_img {
+        min-width: 160px;
+        height: 200px;
+        object-fit: cover;
+        gap: 10px;
+    }
+    .blog-big-content {
+        margin-bottom: 60px;
+    }
+    .blog-big-card h4 {
+        position: absolute;
+        bottom: 0;
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .blog_page_3 .blog-big-content {
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        bottom: 0;
+        margin-bottom: 80px;
+        margin-left: 20px;
+    }
+    .blog_page_3 h3 {
+        position: absolute;
+        bottom: 0;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .booknow_box {
+        background-color: white;
+        min-width: 350px;
+        height: 550px;
+    }
+}
+
+@media screen and ( max-width:420px) {
+    .booknow_box {
+        background-color: white;
+        width: 300px !important;
+        height: 550px;
     }
 }
