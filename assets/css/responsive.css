@@ -24,18 +24,125 @@
 
 @media screen and ( max-width:550px) {
     .main_background_text .main_text_top {
-        font-size: 70px;
+        font-size: 60px;
     }
     .main_background_text .main_text_bottom {
-        font-size: 60px;
+        font-size: 50px;
     }
     .destination_page h1 {
         font-size: 40px;
     }
     .about_us_img {
-        min-width: 180px;
+        min-width: 200px;
         height: 300px;
         object-fit: cover;
         gap: 10px;
+    }
+    .main_page_button {
+        padding: 8px 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+
+/* About Us Resposive */
+
+@media screen and ( max-width:460px) {
+    .about_us_img {
+        min-width: 150px;
+        height: 200px;
+        object-fit: cover;
+        gap: 10px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    /* .destination_card {
+        min-width: 310px;
+        height: 450px;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    } */
+    /* Tour Card Responsive */
+    .tour_card {
+        width: 350px;
+        height: 400px;
+        gap: 10px;
+        padding-right: 20px;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .tour_img {
+        min-width: 130px;
+        height: 350px;
+        position: relative;
+    }
+    .tour_desc {
+        padding-left: 10px;
+        color: gray;
+    }
+    .tour_img span {
+        padding: 4px 8px;
+    }
+    .tour_desc h3 {
+        color: #71C9CE;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .tour_desc h3 span {
+        color: gray;
+        font-size: 10px;
+    }
+    .tour_stars {
+        color: gold;
+        padding-left: 20px;
+    }
+    .tour_sign {
+        font-size: 10px;
+        padding-top: 8px;
+    }
+    .tour_sign .fa-solid {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .tour_button {
+        padding: 8px 18px;
+        margin-left: 20px;
+        border: none;
+        font-weight: bold;
+        background: transparent;
+        color: #71C9CE;
+    }
+    /* Testimonial */
+    .testimonial h1 {
+        text-align: center;
+        padding-top: 50px;
+        color: #A6E3E9;
+    }
+    .testimonial_img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .carousel {
+        width: 300px;
+        height: 250px;
+        margin-left: 20px;
+    }
+    .faq_page h1 {
+        text-align: center;
+        color: #A6E3E9;
+        margin-top: 300px;
+    }
+    .accordion {
+        width: 320px;
+        height: 200px;
     }
 }
