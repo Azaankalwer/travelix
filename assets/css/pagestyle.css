@@ -153,7 +153,8 @@ body {
     background: rgb(0, 0, 0, 0.7) url(/assets/images/sydney-2.jpg);
     background-size: cover;
     background-blend-mode: darken;
-    min-width: 350px;
+    width:300px;
+    min-width: 330px;
     height: 830px;
     padding-top: 60px;
     padding-left: 20px;
