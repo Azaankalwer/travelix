@@ -72,8 +72,6 @@
     .tour_card {
         width: 350px;
         height: 400px;
-        gap: 10px;
-        padding-right: 20px;
         transition: transform 1s;
         transform-style: preserve-3d;
     }
@@ -136,13 +134,7 @@
         height: 250px;
         margin-left: 20px;
     }
-    .faq_page h1 {
-        text-align: center;
-        color: #A6E3E9;
-        margin-top: 300px;
-    }
-    .accordion {
-        width: 320px;
-        height: 200px;
+    .faq_section {
+        display: none;
     }
 }
